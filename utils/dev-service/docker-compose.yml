@@ -9,6 +9,12 @@ services:
        # Uncomment if you wish to use static files: 
        #- ./static:/home/node/svkeleton/static
 
+       # Uncomment if you wish to override tailwind.config.cjs 
+       # (or any other file ie- svelte.config.js, postcss.config.cjs etc ): 
+       #- type: bind 
+       #  source: ./tailwind.config.cjs
+       #  target: /home/node/svkeleton/tailwind.config.cjs
+
     # run the init script which will copy src and static files 
     # to local filesystem if necessary, then start the SvelteKit dev server:
     command: >
