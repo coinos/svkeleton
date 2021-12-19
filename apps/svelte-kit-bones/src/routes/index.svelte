@@ -8,7 +8,7 @@
   <h1 class="text-3xl">Welcome to Svkeleton</h1>
 </div>
 
-<p class="ml-10">Visit <a href="https://github.com/satocean/svkeleton">github.com/satocean/svkeleton</a> to read the documentation</p>
+<p class="ml-10">Visit <a href="https://github.com/coinos/svkeleton">github.com/coinos/svkeleton</a> to read the documentation</p>
 
 <style global>
   body { @apply bg-black text-white }
