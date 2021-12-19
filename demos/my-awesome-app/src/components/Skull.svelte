@@ -1,0 +1,1 @@
+<img class="{$$props.class}" src="/favicon.png" />
