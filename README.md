@@ -40,12 +40,12 @@ SvelteKit dev server running; now get to coding!
 
 #### customizing
 
-**static**
+**static**  
 If you wish to edit or add new static files then also be sure to `mkdir static` and uncomment the `./static:` line under `volumes` in the `docker-compose.yml` file. 
 
 ---
 
-**importing npm modules**
+**importing npm modules**  
 To add modules that need to be installed via npm you can edit your `docker-compose.yml` to add a line for each module you wish to make available on container start. Ex: 
 ```yml
 command: >
@@ -58,7 +58,7 @@ command: >
 ---
 
 
-**svelte.config.js, tailwind.config.js, or any other individual file**
+**svelte.config.js, tailwind.config.js, or any other individual file**  
 If you need to override an individual file in the Svekeleton container you can use a bind volume; just create the file in your app or demo dir and then mount it into container like so: 
 ```yml
     volumes:
@@ -70,7 +70,7 @@ If you need to override an individual file in the Svekeleton container you can u
 ```
 ---
 
-**other changes**
+**other changes**  
 If necessary, make a copy and/or edit the base SvelteKit app `./apps/svelte-kit-bones` and rebuild the image to introduce structural changes that otherwise are difficult to do via the stock Docker service/container.
 
 
