@@ -1,6 +1,6 @@
 ## Svkeleton
 
-A preconfigured SvelteKit + JIT setup and mono-repo template
+A preconfigured SvelteKit + Tailwind JIT setup and mono-repo template
 
 Run as [Docker service](#svkeleton-as-a-service) or copy and paste the [barebone dir] where you need. 
 
