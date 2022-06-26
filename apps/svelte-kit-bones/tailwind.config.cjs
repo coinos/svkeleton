@@ -1,6 +1,6 @@
 const twConf = {
   mode: 'jit',
-  purge: [
+  content: [
     "./src/**/*.{html,js,svelte,ts}",
   ],
   plugins: []
