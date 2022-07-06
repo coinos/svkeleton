@@ -15,7 +15,7 @@
   },
   "type": "module",
   "scripts": {
-    "dev": "npx svelte-kit dev --port 3333 --host",
+    "dev": "./dev.sh",
     "build" : "npx svelte-kit build", 
     "uninstall": "rm -rf node_modules .svelte-kit"
   }

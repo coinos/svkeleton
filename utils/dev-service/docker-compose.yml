@@ -4,6 +4,8 @@ services:
     image: svkeleton
     ports: 
       - "3333:3333"
+    environment :
+       - PORT=3333
     volumes:
        - ./src:/home/node/svkeleton/src
        # Uncomment if you wish to use static files: 

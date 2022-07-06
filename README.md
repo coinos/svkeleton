@@ -70,6 +70,17 @@ If you need to override an individual file in the Svekeleton container you can u
 ```
 ---
 
+#### Docker compose overrides
+
+**svelte-kit dev port**  
+By default a `svelte-kit dev` starts on port `3333`.  To change this, edit your `docker-compose.yml` to change the `environment : PORT` value 
+
+if you are binding ports to the container also be sure to change `ports` mapping, located in this same file, to reflect your custom port so you can access it through the container.   Alternatively to binding a port see the below option. 
+
+**network_mode: "host"**
+Instead of isolating your Svkeleton's network to inside the container (thus requiring a port binding to reach it) you may run it on the same host by removing the `ports` line in `docker-compose.yml` and replacing with `network_mode: "host"`
+---
+
 **other changes**  
 If necessary, make a copy and/or edit the base SvelteKit app `./apps/svelte-kit-bones` and rebuild the image to introduce structural changes that otherwise are difficult to do via the stock Docker service/container.
 
