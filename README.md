@@ -79,6 +79,7 @@ if you are binding ports to the container also be sure to change `ports` mapping
 
 **network_mode: "host"**
 Instead of isolating your Svkeleton's network to inside the container (thus requiring a port binding to reach it) you may run it on the same host by removing the `ports` line in `docker-compose.yml` and replacing with `network_mode: "host"`
+
 ---
 
 **other changes**  
