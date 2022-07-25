@@ -1,17 +1,11 @@
 import preprocess from "svelte-preprocess"
-import path from 'path'
 import adapter from '@sveltejs/adapter-static'
 
+/** @type {import('@sveltejs/kit').Config} */
 const config = {
   kit: {
     adapter: adapter(),
-    vite: {
-      resolve: {
-        alias: {
-          $components: path.resolve('src/components')
-        }
-      }
-    }        
+    prerender : { default : true }       
   },
   
   preprocess: [preprocess({
