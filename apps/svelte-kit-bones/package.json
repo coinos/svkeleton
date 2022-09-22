@@ -19,6 +19,7 @@
     "prepare": "svelte-kit sync",
     "dev": "./dev.sh",
     "build": "npx vite build",
+    "build-dev": "npx vite build --mode development",
     "uninstall": "rm -rf node_modules .svelte-kit"
   }
 }
